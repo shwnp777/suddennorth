@@ -1,0 +1,12 @@
+{
+  "name": "hioj2tm-7dbxfnl",
+  "arn": "arn:aws:iam::742078126833:role/hioj2tm-7dbxfnl",
+  "service": [
+    "lambda.amazonaws.com",
+    "edgelambda.amazonaws.com"
+  ],
+  "policy": {
+    "arn": "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+  },
+  "region": "us-east-1"
+}
