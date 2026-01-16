@@ -87,6 +87,12 @@ export default function SafeStreamPage() {
 									View Screenshots →
 								</Link>
 							</div>
+							<Link
+								href='/products/safestream/privacy-policy'
+								className='mt-4 inline-block text-sm text-gray-500 hover:underline'
+							>
+								SafeStream Privacy Policy
+							</Link>
 						</div>
 
 						{/* App Screenshot Card */}
