@@ -58,15 +58,6 @@ export default function SiteHeader() {
 						</Link>
 					))}
 				</div>
-
-				<div className='hidden lg:flex lg:flex-1 lg:justify-end'>
-					<Link
-						href='/content'
-						className='text-sm/6 font-semibold text-gray-900 dark:text-white'
-					>
-						Free Content <span aria-hidden='true'>&rarr;</span>
-					</Link>
-				</div>
 			</nav>
 
 			<Dialog
