@@ -12,7 +12,7 @@ export default function SafeStreamPage() {
 			<div className='relative isolate -z-10'>
 				<svg
 					aria-hidden='true'
-					className='absolute inset-x-0 top-0 -z-10 h-256 w-full mask-[radial-gradient(32rem_32rem_at_center,white,transparent)] stroke-gray-200 dark:stroke-white/10'
+					className='hidden md:block absolute inset-x-0 top-0 -z-10 h-256 w-full mask-[radial-gradient(32rem_32rem_at_center,white,transparent)] stroke-gray-200 dark:stroke-white/10'
 				>
 					<defs>
 						<pattern
@@ -165,7 +165,7 @@ export default function SafeStreamPage() {
 				<div className='mt-10 relative w-full aspect-video rounded-2xl overflow-hidden bg-gray-900 ring-1 ring-gray-900/20 dark:ring-white/10 shadow-xl'>
 					<iframe
 						className='absolute inset-0 w-full h-full'
-						src='https://www.youtube.com/embed/YOUTUBE_VIDEO_ID'
+						src='https://www.youtube.com/watch?v=dTVAPNoVrvs'
 						title='Safe Stream Setup Tutorial'
 						allowFullScreen
 					/>
@@ -212,7 +212,8 @@ export default function SafeStreamPage() {
 					</p>
 
 					<a
-						href='/download'
+						href='https://apps.apple.com/us/app/safe-stream-app/id6757622774
+Safe Stream App'
 						className='mt-8 inline-flex items-center gap-4 rounded-md bg-white px-6 py-4 shadow hover:bg-gray-100'
 					>
 						<Image
