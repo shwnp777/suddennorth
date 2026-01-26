@@ -4,34 +4,28 @@ import Link from 'next/link';
 
 const collections = [
 	{
+		name: 'Ripd',
+		// href: '/',
+		imageSrc: '/assets/illustrations/ripd.png',
+		imageAlt: 'App to give full body workout',
+		description:
+			'A full health app that creates workouts, tracks fasting, and gives you control - for free!',
+	},
+	{
 		name: 'Ourstuff',
-		href: '/',
-		imageSrc:
-			'https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-01-collection-01.jpg',
-		imageAlt:
-			'Brown leather key ring with brass metal loops and rivets on wood table.',
+		// href: '/',
+		imageSrc: '/assets/illustrations/ourstuff.jpg',
+		imageAlt: 'App for users to rent anything.',
 		description:
-			'A free application for users to rent any item from other users in their area.',
+			'An app to allow users to rent anything - keeping your privacy sacred.',
 	},
 	{
-		name: 'Organized Desk Collection',
-		href: '/',
-		imageSrc:
-			'https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-01-collection-02.jpg',
-		imageAlt:
-			'Natural leather mouse pad on white desk next to porcelain mug and keyboard.',
+		name: '99and1',
+		// href: '/',
+		imageSrc: '/assets/illustrations/99and1.jpg',
+		imageAlt: 'Software to allow churches to handle all of the admin.',
 		description:
-			'The rest of the house will still be a mess, but your desk will look great.',
-	},
-	{
-		name: 'Focus Collection',
-		href: '/',
-		imageSrc:
-			'https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-01-collection-03.jpg',
-		imageAlt:
-			'Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.',
-		description:
-			'Be more productive than enterprise project managers with a single piece of paper.',
+			'Software that allows churches to control all of their administration for less - allowing them to focus on what matters.',
 	},
 ];
 
@@ -83,17 +77,13 @@ export default function Page() {
 						Coming Soon
 					</h2>
 					<p className='mt-4 text-base text-gray-400'>
-						We are in the process of building out our application store. Provide
+						We are in the process of building out our applications. Provide
 						feedback on what applications you would like to see.
 					</p>
 
 					<div className='mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:space-y-0 lg:gap-x-8'>
 						{collections.map((collection) => (
-							<Link
-								key={collection.name}
-								href={collection.href}
-								className='group block'
-							>
+							<div key={collection.name} className='group block'>
 								<Image
 									alt={collection.imageAlt}
 									src={collection.imageSrc}
@@ -107,7 +97,7 @@ export default function Page() {
 								<p className='mt-2 text-sm text-gray-500'>
 									{collection.description}
 								</p>
-							</Link>
+							</div>
 						))}
 					</div>
 				</section>
@@ -120,7 +110,7 @@ export default function Page() {
 						<div className='absolute inset-0'>
 							<Image
 								alt=''
-								src='https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-01-feature-section-02.jpg'
+								src='/assets/illustrations/partner.png'
 								className='size-full object-cover'
 								priority
 								fill
@@ -132,19 +122,17 @@ export default function Page() {
 									id='comfort-heading'
 									className='text-3xl font-bold tracking-tight text-white sm:text-4xl'
 								>
-									Simple productivity
+									Give it Life
 								</h2>
 								<p className='mt-3 text-xl text-white'>
-									Endless tasks, limited hours, a single piece of paper. Not
-									really a haiku, but we&apos;re doing our best here. No kanban
-									boards, burndown charts, or tangled flowcharts with our Focus
-									system. Just the undeniable urge to fill empty circles.
+									From first concept to finished product, we partner with you to
+									bring your idea to life—clearly, creatively, and with purpose.
 								</p>
 								<Link
-									href='/'
+									href='/contact'
 									className='mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto'
 								>
-									Shop Focus
+									Start Now
 								</Link>
 							</div>
 						</div>

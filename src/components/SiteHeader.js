@@ -17,6 +17,10 @@ const navigation = [
 export default function SiteHeader() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+	const handleClick = () => {
+		setMobileMenuOpen(false);
+	};
+
 	return (
 		<header className='absolute inset-x-0 top-0 z-50'>
 			<nav
@@ -28,7 +32,7 @@ export default function SiteHeader() {
 						<span className='sr-only'>Sudden North</span>
 						<Image
 							aria-hidden
-							src='/assets/logos/suddenNorthFinal.svg'
+							src='/assets/logos/suddenNorthFinal_white.svg'
 							alt=''
 							width={180}
 							height={60}
@@ -92,13 +96,14 @@ export default function SiteHeader() {
 						<div className='-my-6 divide-y divide-gray-500/10 dark:divide-gray-500/25'>
 							<div className='space-y-2 py-6'>
 								{navigation.map((item) => (
-									<a
+									<Link
+										onClick={handleClick}
 										key={item.name}
 										href={item.href}
 										className='-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5'
 									>
 										{item.name}
-									</a>
+									</Link>
 								))}
 							</div>
 						</div>

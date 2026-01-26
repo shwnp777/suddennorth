@@ -3,13 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const stats = [
-	{ label: 'Founded', value: '2025' },
-	{ label: 'Employees', value: '5' },
-	{ label: 'Countries', value: '3' },
-	{ label: 'Value', value: '$5.9M' },
-];
-
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
 }
@@ -118,18 +111,7 @@ export default function Page() {
 								</p>
 							</div>
 						</div>
-						<dl className='mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4 dark:border-gray-800'>
-							{stats.map((stat, statIdx) => (
-								<div key={statIdx}>
-									<dt className='text-sm/6 font-semibold text-gray-600 dark:text-gray-400'>
-										{stat.label}
-									</dt>
-									<dd className='mt-2 text-3xl/10 font-bold tracking-tight text-gray-900 dark:text-white'>
-										{stat.value}
-									</dd>
-								</div>
-							))}
-						</dl>
+
 						<div className='mt-10 flex'>
 							<Link
 								href='/about'
