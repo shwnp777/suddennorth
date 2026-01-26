@@ -7,103 +7,62 @@ export default function SafeStreamPage() {
 	return (
 		<main className='isolate'>
 			{/* ======================== */}
-			{/* Background Grid + Blob   */}
+			{/* Hero Section             */}
 			{/* ======================== */}
-			<div className='relative isolate -z-10'>
-				<svg
-					aria-hidden='true'
-					className='hidden md:block absolute inset-x-0 top-0 -z-10 h-256 w-full mask-[radial-gradient(32rem_32rem_at_center,white,transparent)] stroke-gray-200 dark:stroke-white/10'
-				>
-					<defs>
-						<pattern
-							id='grid-pattern'
-							width={200}
-							height={200}
-							patternUnits='userSpaceOnUse'
-						>
-							<path d='M0 200V0H200' fill='none' />
-						</pattern>
-					</defs>
+			<div className='mx-auto max-w-7xl px-6 pt-40 pb-24 lg:px-8 lg:pt-32'>
+				<div className='grid gap-x-16 gap-y-12 lg:grid-cols-2 lg:items-center'>
+					{/* Logo + Text */}
+					<div>
+						<Image
+							src='/assets/logos/SafeStream.png'
+							alt='Safe Stream Logo'
+							width={120}
+							height={120}
+							className='rounded-xl'
+						/>
 
-					<rect
-						width='100%'
-						height='100%'
-						fill='url(#grid-pattern)'
-						strokeWidth={0}
-					/>
-				</svg>
+						<h1 className='mt-6 text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl dark:text-white'>
+							Safe Stream
+						</h1>
 
-				<div
-					aria-hidden='true'
-					className='absolute top-0 right-0 left-1/2 -z-10 -ml-24 transform-gpu blur-3xl lg:ml-24 xl:ml-48'
-				>
-					<div
-						className='aspect-[801/1036] w-[200rem] bg-gradient-to-tr from-sky-300 to-indigo-400 opacity-30'
-						style={{
-							clipPath:
-								'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
-						}}
-					/>
-				</div>
+						<p className='mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-xl'>
+							A safer YouTube experience for your children. Approve the
+							channels, playlists, & videos you trust— Safe Stream handles the
+							rest. No ads. No autoplay. No algorithm steering your kids to the
+							wrong content.
+						</p>
 
-				{/* ======================== */}
-				{/* Hero Section             */}
-				{/* ======================== */}
-				<div className='mx-auto max-w-7xl px-6 pt-40 pb-24 lg:px-8 lg:pt-32'>
-					<div className='grid gap-x-16 gap-y-12 lg:grid-cols-2 lg:items-center'>
-						{/* Logo + Text */}
-						<div>
-							<Image
-								src='/assets/logos/SafeStream.png'
-								alt='Safe Stream Logo'
-								width={120}
-								height={120}
-								className='rounded-xl'
-							/>
-
-							<h1 className='mt-6 text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl dark:text-white'>
-								Safe Stream
-							</h1>
-
-							<p className='mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-xl'>
-								A safer YouTube experience for your children. Approve the
-								channels, playlists, & videos you trust— Safe Stream handles the
-								rest. No ads. No autoplay. No algorithm steering your kids to
-								the wrong content.
-							</p>
-
-							<div className='mt-8 flex gap-4'>
-								<Link
-									href='#video'
-									className='rounded-md bg-sky-600 px-4 py-2.5 text-sm font-semibold text-white shadow hover:bg-sky-500 dark:bg-sky-500 dark:hover:bg-sky-400'
-								>
-									Setup Guide Video
-								</Link>
-
-								<Link
-									href='#screenshots'
-									className='rounded-md bg-white px-4 py-2.5 text-sm font-semibold text-sky-600 shadow hover:bg-gray-100 dark:bg-white dark:hover:bg-gray-200'
-								>
-									View Screenshots →
-								</Link>
-							</div>
+						<div className='mt-8 flex gap-4'>
 							<Link
-								href='/products/safestream/privacy-policy'
-								className='mt-4 inline-block text-sm text-gray-500 hover:underline'
+								href='#video'
+								className='rounded-md bg-sky-600 px-4 py-2.5 text-sm font-semibold text-white shadow hover:bg-sky-500 dark:bg-sky-500 dark:hover:bg-sky-400'
 							>
-								SafeStream Privacy Policy
+								Setup Guide Video
+							</Link>
+
+							<Link
+								href='#screenshots'
+								className='rounded-md bg-white px-4 py-2.5 text-sm font-semibold text-sky-600 shadow hover:bg-gray-100 dark:bg-white dark:hover:bg-gray-200'
+							>
+								View Screenshots →
 							</Link>
 						</div>
+						<Link
+							href='/products/safestream/privacy-policy'
+							className='mt-4 inline-block text-sm text-gray-500 hover:underline'
+						>
+							SafeStream Privacy Policy
+						</Link>
+					</div>
 
-						{/* App Screenshot Card */}
-						<div className='relative h-96 w-full'>
-							<Image
-								src='/assets/illustrations/safepreview.jpg'
-								alt='Safe Stream App Preview'
-								className='rounded-2xl object-cover shadow-xl ring-1 ring-gray-900/10 dark:ring-white/10'
-								fill
-							/>
-						</div>
+					{/* App Screenshot Card */}
+					<div className='relative h-96 w-full'>
+						<Image
+							src='/assets/illustrations/Marketing.png'
+							alt='Safe Stream App Preview'
+							className='rounded-2xl object-cover shadow-xl ring-1 ring-gray-900/10 dark:ring-white/10'
+							fill
+						/>
 					</div>
 				</div>
 			</div>

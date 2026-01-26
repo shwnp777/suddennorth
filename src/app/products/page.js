@@ -39,23 +39,22 @@ export default function Page() {
 	return (
 		<div className='bg-gray-900'>
 			{/* Hero section */}
-			<div className='relative bg-sky-900'>
+			<div className='relative bg-sky-900 min-h-screen'>
 				{/* Decorative image and overlay */}
 				<div aria-hidden='true' className='absolute inset-0 overflow-hidden'>
 					<Image
 						alt=''
 						src='/assets/illustrations/apps.jpg'
-						className='size-full object-cover'
-						priority
 						fill
+						priority
+						sizes='100vw'
+						className='object-cover'
 					/>
 				</div>
-				<div
-					aria-hidden='true'
-					className='absolute inset-0 bg-gray-900 opacity-80'
-				/>
 
-				<div className='relative mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center sm:py-64 lg:px-0'>
+				<div aria-hidden='true' className='absolute inset-0 bg-gray-900/80' />
+
+				<div className='relative mx-auto flex min-h-screen max-w-3xl flex-col items-center justify-center px-6 text-center'>
 					<h1 className='text-4xl font-bold tracking-tight text-white lg:text-6xl'>
 						Sudden North Applications
 					</h1>
@@ -72,8 +71,7 @@ export default function Page() {
 				</div>
 			</div>
 
-			{/* <main>
-				//Collection section
+			<main>
 				<section
 					aria-labelledby='collection-heading'
 					className='mx-auto max-w-xl px-4 pt-24 sm:px-6 sm:pt-32 lg:max-w-7xl lg:px-8'
@@ -114,7 +112,6 @@ export default function Page() {
 					</div>
 				</section>
 
-				//Featured section
 				<section
 					aria-labelledby='comfort-heading'
 					className='mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8'
@@ -153,7 +150,7 @@ export default function Page() {
 						</div>
 					</div>
 				</section>
-			</main> */}
+			</main>
 		</div>
 	);
 }

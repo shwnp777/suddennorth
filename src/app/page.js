@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<div className='relative isolate overflow-hidden'>
+		<div className='relative isolate overflow-hidden min-h-screen'>
 			{/* Background image */}
 			<Image
 				aria-hidden
@@ -43,8 +43,8 @@ export default function Home() {
 				/>
 			</div>
 
-			<div className='mx-auto max-w-7xl px-6 lg:px-8'>
-				<div className='mx-auto max-w-2xl py-32 sm:py-48 lg:py-56'>
+			<div className='relative z-10 flex min-h-screen items-center justify-center px-6 lg:px-8'>
+				<div className='mx-auto max-w-2xl text-center'>
 					<div className='hidden sm:mb-8 sm:flex sm:justify-center'>
 						<div className='relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:text-gray-400 dark:ring-white/10 dark:hover:ring-white/20'>
 							Announcing our newest Application.{' '}
