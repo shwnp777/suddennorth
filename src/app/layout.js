@@ -29,11 +29,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang='en'>
-			{/* You can put a theme class on <html> if you manage dark mode with JS */}
-			<body className='bg-white  min-h-screen'>
+		<html data-theme='dark' lang='en' className='dark'>
+			<body className='min-h-screen bg-gray-950 text-white'>
 				<SiteHeader />
-				{/* Reserve top space for the absolute header */}
 				<div>{children}</div>
 				<SiteFooter />
 			</body>
