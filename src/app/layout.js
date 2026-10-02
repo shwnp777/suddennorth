@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
@@ -6,31 +5,37 @@ import SiteFooter from '@/components/SiteFooter';
 export const metadata = {
 	metadataBase: new URL('https://suddennorth.com'),
 	title: {
-		default: 'Sudden North — From the ground up',
+		default: 'Sudden North — Mission-driven technology',
 		template: '%s · Sudden North',
 	},
 	description:
-		"Apps, Websites, Software Engineering, Marketing, Finance & Sales consulting — it's all up from here.",
+		'Secure software, resilient systems, and integrated technology for public missions and private innovation.',
+	icons: {
+		icon: '/favicon-32.png',
+		apple: '/apple-touch-icon.png',
+	},
 	openGraph: {
 		type: 'website',
 		url: 'https://suddennorth.com',
-		title: 'Sudden North',
+		title: 'Sudden North — Mission-driven technology',
 		description:
-			"Apps, Websites, Software Engineering, Marketing, Finance & Sales consulting — it's all up from here.",
+			'Secure software, resilient systems, and integrated technology for public missions and private innovation.',
 		siteName: 'Sudden North',
+		images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Sudden North — Build what matters. Move what’s possible.' }],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Sudden North',
+		title: 'Sudden North — Mission-driven technology',
 		description:
-			"Apps, Websites, Software Engineering, Marketing, Finance & Sales consulting — it's all up from here.",
+			'Secure software, resilient systems, and integrated technology for public missions and private innovation.',
+		images: ['/og.png'],
 	},
 };
 
 export default function RootLayout({ children }) {
 	return (
-		<html data-theme='dark' lang='en' className='dark'>
-			<body className='min-h-screen bg-gray-950 text-white'>
+		<html lang='en'>
+			<body>
 				<SiteHeader />
 				<div>{children}</div>
 				<SiteFooter />
