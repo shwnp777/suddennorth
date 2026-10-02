@@ -4,27 +4,24 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-		"build": "next build && vite build && node scripts/prepare-sites-build.mjs",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
+    "firebase": "^12.19.0",
     "next": "^15.5.9",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.37.1",
     "@eslint/eslintrc": "^3",
-    "@openai/sites-vite-plugin": "^0.1.0",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "sass": "^1.93.2",
-    "tailwindcss": "^4",
-    "vite": "^8.0.13",
-    "wrangler": "^4.92.0"
+    "tailwindcss": "^4"
   }
 }
