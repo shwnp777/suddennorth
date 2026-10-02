@@ -1,5 +1,6 @@
-import { cp, mkdir } from 'node:fs/promises';
+import { cp, mkdir, rm } from 'node:fs/promises';
 
 await mkdir('dist/server', { recursive: true });
 await cp('dist/rsc/index.mjs', 'dist/server/index.js');
 await cp('out', 'dist/client', { recursive: true, force: true });
+await rm('dist/client/assets/logos/SafeStreamPhotoShop.psd', { force: true });
