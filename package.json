@@ -9,8 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.9",
-    "@heroicons/react": "^2.2.0",
     "firebase": "^12.19.0",
     "next": "^15.5.9",
     "react": "19.1.0",
@@ -20,8 +18,11 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.5.4",
-    "sass": "^1.93.2",
+    "eslint-config-next": "^15.5.4",
     "tailwindcss": "^4"
+  },
+  "overrides": {
+    "postcss": "^8.5.23",
+    "@grpc/grpc-js": "^1.13.6"
   }
 }
