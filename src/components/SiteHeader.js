@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import TerminalLogo from '@/components/TerminalLogo';
 
 const navigation = [
 	{ name: 'Capabilities', href: '/services' },
@@ -12,8 +12,8 @@ export default function SiteHeader() {
 	return (
 		<header className='site-header'>
 			<nav className='shell nav-bar' aria-label='Primary navigation'>
-				<Link href='/' className='brand' aria-label='Sudden North home'>
-					<Image src='/assets/brand/logo-horizontal-on-dark.svg' alt='Sudden North' width={760} height={160} priority />
+				<Link href='/' className='brand terminal-link' aria-label='Sudden North home'>
+					<TerminalLogo />
 				</Link>
 				<div className='desktop-nav'>
 					{navigation.map((item) => <Link href={item.href} key={item.name}>{item.name}</Link>)}
