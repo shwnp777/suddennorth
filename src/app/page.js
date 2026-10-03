@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/seo';
 
 const systemReadout = [['01','Discover','Frame the mission'],['02','Engineer','Build the right system'],['03','Deploy','Ship with confidence']];
 const capabilities = [
@@ -8,7 +9,7 @@ const capabilities = [
 	{ number:'04', title:'Hardware', text:'Practical prototyping and edge solutions that bridge the physical environment and the software layer.', tags:['Rapid prototyping','Edge systems','Technical validation'] },
 ];
 
-export const metadata = { alternates: { canonical: '/' } };
+export const metadata = pageMetadata({ path: '/' });
 
 export default function Home() {
 	return (

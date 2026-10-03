@@ -1,6 +1,7 @@
 import ContactForm from '@/components/ContactForm';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title:'Contact', description:'Start a conversation with Sudden North about your next mission, product, or system.', alternates: { canonical: '/contact' } };
+export const metadata = pageMetadata({ title: 'Contact', description: 'Start a conversation with Sudden North about your next mission, product, or system.', path: '/contact' });
 
 export default function ContactPage() {
 	return <main className='page-main'>

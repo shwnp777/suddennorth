@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="56" fill="#0b1220"/>
+  <svg x="40" y="34" width="176" height="188" viewBox="0 0 179.525 196.171"><defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #3ddc97;
+      }
+
+      .cls-3, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        stroke: #3ddc97;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: none;
+        stroke-miterlimit: 100;
+      }
+
+      .cls-5, .cls-7 {
+        stroke-width: 14px;
+      }
+
+      .cls-6, .cls-7 {
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Rectangle_5" data-name="Rectangle 5">
+    <rect class="cls-4" x="19.909" y="65.486" width="22.668" height="75.652"/>
+    <rect class="cls-6" x="19.909" y="65.486" width="22.668" height="75.652"/>
+  </g>
+  <g id="Triangle_1" data-name="Triangle 1">
+    <polygon class="cls-2" points="150.593 0 124.439 43.186 176.748 43.186 150.593 0"/>
+  </g>
+  <g id="Rectangle_5-2" data-name="Rectangle 5">
+    <polygon class="cls-3" points="52.755 50.186 36.429 65.24 126.185 160.348 142.511 145.294 52.755 50.186"/>
+    <polygon class="cls-6" points="52.755 50.186 36.429 65.24 126.185 160.348 142.511 145.294 52.755 50.186"/>
+  </g>
+  <g id="Rectangle_5-3" data-name="Rectangle 5">
+    <rect class="cls-1" x="139.031" y="34.062" width="22.516" height="113.025"/>
+  </g>
+  <circle class="cls-5" cx="149.216" cy="165.862" r="23.309" transform="translate(-73.578 154.091) rotate(-45)"/>
+  <circle class="cls-7" cx="31.309" cy="164.448" r="23.309" transform="translate(-107.112 70.305) rotate(-45)"/>
+  <circle class="cls-7" cx="30.309" cy="47.126" r="23.309" transform="translate(-24.446 35.235) rotate(-45)"/>
+</svg>
+</svg>
