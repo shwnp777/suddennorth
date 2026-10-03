@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 const systemReadout = [['01','Discover','Frame the mission'],['02','Engineer','Build the right system'],['03','Deploy','Ship with confidence']];
@@ -8,6 +7,8 @@ const capabilities = [
 	{ number:'03', title:'Systems', text:'Connected workflows, infrastructure, and automation that turn fragmented tools into one dependable system.', tags:['Systems integration','Automation','Modernization'] },
 	{ number:'04', title:'Hardware', text:'Practical prototyping and edge solutions that bridge the physical environment and the software layer.', tags:['Rapid prototyping','Edge systems','Technical validation'] },
 ];
+
+export const metadata = { alternates: { canonical: '/' } };
 
 export default function Home() {
 	return (
@@ -50,13 +51,6 @@ export default function Home() {
 				<div className='shell market-grid'>
 					<article className='market-card public-card'><p className='section-kicker'>Public sector</p><h2>Mission outcomes over technology theater.</h2><p>We help teams modernize workflows, prototype new capabilities, and deliver secure, usable systems with the clarity public missions demand.</p><Link href='/about#markets' className='text-link light-link'>For government teams <span>↗</span></Link><span className='market-code'>PUBLIC // 01</span></article>
 					<article className='market-card private-card'><p className='section-kicker dark-kicker'>Commercial</p><h2>Product momentum without the growing pains.</h2><p>We help founders and operators turn complex ideas into focused products, connected operations, and a technology foundation built to scale.</p><Link href='/about#markets' className='text-link'>For private organizations <span>↗</span></Link><span className='market-code'>PRIVATE // 02</span></article>
-				</div>
-			</section>
-
-			<section className='section product-section'>
-				<div className='shell product-grid'>
-					<div className='product-visual'><div className='product-glow' /><Image src='/assets/logos/SafeStream.png' alt='Safe Stream app icon' width={132} height={132} /><span>PRODUCT / 001</span></div>
-					<div><p className='section-kicker'>Built by Sudden North</p><h2>Safer streaming starts with parents in control.</h2><p>Safe Stream is an iOS experience that lets parents approve the YouTube content their children can watch—with no ads, autoplay, or algorithmic detours.</p><Link href='/products/safestream' className='button button-primary'>Explore Safe Stream <span>↗</span></Link></div>
 				</div>
 			</section>
 

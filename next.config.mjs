@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	images: {
-		remotePatterns: [
-			{ protocol: 'https', hostname: 'images.unsplash.com' },
-			{ protocol: 'https', hostname: 'plus.unsplash.com' }, // sometimes used for higher-res
-			{ protocol: 'https', hostname: 'tailwindcss.com' }, // sometimes used for higher-res
-		],
+	// Product pages are retired for now; the Safe Stream privacy policy stays live for the App Store listing.
+	async redirects() {
+		return [
+			{ source: '/products', destination: '/', permanent: false },
+			{ source: '/products/safestream', destination: '/', permanent: false },
+			{ source: '/content', destination: '/', permanent: false },
+		];
 	},
 };
 

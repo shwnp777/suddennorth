@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const metadata = { title:'Company', description:'Sudden North is a Service-Disabled Veteran-Owned Small Business building useful, resilient technology.' };
+export const metadata = { title:'Company', description:'Sudden North is a Service-Disabled Veteran-Owned Small Business building useful, resilient technology.', alternates: { canonical: '/about' } };
 
 const principles = [
 	['01','Clarity before complexity','We translate hard problems into a shared picture of the outcome, the constraints, and the decisions ahead.'],

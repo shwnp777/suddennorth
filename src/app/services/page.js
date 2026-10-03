@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export const metadata = { title:'Capabilities', description:'Software, cybersecurity, systems integration, and hardware prototyping for government and commercial teams.' };
+export const metadata = { title:'Capabilities', description:'Software, cybersecurity, systems integration, and hardware prototyping for government and commercial teams.', alternates: { canonical: '/services' } };
 
 const services = [
 	['01 / SOFTWARE','Application engineering','Modern web, mobile, cloud, and data products shaped around the mission—not a generic stack.',['Product strategy & UX','Full-stack development','Cloud architecture','Data and AI workflows']],
