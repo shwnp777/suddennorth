@@ -1,0 +1,61 @@
+{
+	"_readme": "Single source of truth for the Teaming page AND the capability statement PDF. Edit here, then run `node scripts/build-capability-statement.mjs` to regenerate public/sudden-north-capability-statement.pdf. Empty identifier values are hidden everywhere.",
+	"legalName": "Sudden North, LLC",
+	"name": "Sudden North",
+	"website": "suddennorth.com",
+	"email": "contact@suddennorth.com",
+	"phone": "",
+	"location": "New England",
+	"updated": "October 2026",
+	"designation": {
+		"short": "SDVOSB",
+		"long": "Service-Disabled Veteran-Owned Small Business"
+	},
+	"identifiers": [
+		{ "label": "UEI", "value": "" },
+		{ "label": "CAGE", "value": "" }
+	],
+	"naics": [
+		{ "code": "541511", "title": "Custom Computer Programming Services" },
+		{ "code": "541512", "title": "Computer Systems Design Services" },
+		{ "code": "541519", "title": "Other Computer Related Services" },
+		{ "code": "541330", "title": "Engineering Services" },
+		{ "code": "541715", "title": "R&D in the Physical, Engineering, and Life Sciences" }
+	],
+	"summary": "Sudden North is a veteran-led engineering firm delivering secure software, cybersecurity, systems integration, and hardware prototyping. We give prime contractors and program offices a small, accountable team that understands defense delivery from requirements and estimates through test and sustainment.",
+	"competencies": [
+		{
+			"title": "Software engineering",
+			"items": ["Full-stack web, mobile, and cloud applications", "Mission and business system modernization", "Data pipelines and AI-enabled workflows", "DevSecOps and CI/CD"]
+		},
+		{
+			"title": "Cybersecurity",
+			"items": ["NIST SP 800-171 / CMMC readiness support", "Secure architecture and threat modeling", "Identity, access, and zero-trust patterns", "AI integration risk assessment"]
+		},
+		{
+			"title": "Systems engineering & integration",
+			"items": ["Requirements, interfaces, and architecture", "API design and systems integration", "Workflow automation", "Legacy system modernization"]
+		},
+		{
+			"title": "Hardware & prototyping",
+			"items": ["Rapid concept prototyping", "Edge computing and sensor integration", "Technical validation and test", "Hardware–software integration"]
+		}
+	],
+	"differentiators": [
+		{ "title": "Defense program experience", "text": "Founders have led, estimated, and proposed multimillion-dollar defense software efforts on strategic and airborne electronic warfare programs." },
+		{ "title": "Engineering and business fluency", "text": "Senior software and electrical engineering leadership paired with MBA-level cost, schedule, and proposal discipline." },
+		{ "title": "Security in the foundation", "text": "Cyber is designed into the architecture and delivery pipeline, not inspected in at the end." },
+		{ "title": "Small and accountable", "text": "Direct access to the founders, clear ownership, and visible progress from the first week." }
+	],
+	"teamingRoles": [
+		{ "code": "01", "title": "Specialty subcontractor", "text": "Defined software, cyber, or systems workshare inside your program, staffed by senior engineers who need little ramp-up." },
+		{ "code": "02", "title": "Proposal & pursuit partner", "text": "Technical volume support, solution architecture, and bottom-up estimates from people who have written them." },
+		{ "code": "03", "title": "Surge & specialty capacity", "text": "Focused help when a program needs depth fast: modernization, integration, test, or security hardening." },
+		{ "code": "04", "title": "Prototype & R&D partner", "text": "Rapid prototypes and technical validation that retire risk before a program commits to a full build." }
+	],
+	"founders": [
+		{ "name": "Shawn-Patrick Bland", "role": "Co-Founder", "bio": "Retired U.S. Navy veteran and senior software engineer with an MBA. Has developed, managed, estimated, and proposed multimillion-dollar defense software efforts." },
+		{ "name": "Ben Martin", "role": "Co-Founder", "bio": "Chief engineer with an electrical engineering background and deep experience in complex airborne defense systems." }
+	],
+	"caseStudies": []
+}

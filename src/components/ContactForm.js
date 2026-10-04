@@ -3,9 +3,12 @@
 import { useState } from 'react';
 import { submitContactForm } from '@/lib/firebase';
 
-const initialState = { name: '', email: '', organization: '', market: '', message: '', website: '' };
+const blankState = { name: '', email: '', organization: '', market: '', message: '', website: '' };
 
-export default function ContactForm() {
+// Optional props let other pages (e.g. Teaming) reuse the form with their own framing.
+// `market` values must stay in sync with firestore.rules.
+export default function ContactForm({ initialMarket = '', messageLabel = 'What are you trying to make possible?', messagePlaceholder, messagePrefix = '', successText = 'Message received. We’ll be in touch soon.' }) {
+	const initialState = { ...blankState, market: initialMarket };
 	const [form, setForm] = useState(initialState);
 	const [status, setStatus] = useState('idle');
 	const [error, setError] = useState('');
@@ -27,7 +30,7 @@ export default function ContactForm() {
 				email: form.email.trim(),
 				organization: form.organization.trim(),
 				market: form.market,
-				message: form.message.trim(),
+				message: `${messagePrefix}${form.message.trim()}`,
 			});
 			setForm(initialState);
 			setStatus('success');
@@ -45,11 +48,11 @@ export default function ContactForm() {
 			<label><span>Organization</span><input name='organization' value={form.organization} onChange={updateField} autoComplete='organization' maxLength={180} /></label>
 			<label><span>Working environment</span><select name='market' value={form.market} onChange={updateField} required><option value='' disabled>Select one</option><option value='Government'>Government / public sector</option><option value='Commercial'>Commercial / private sector</option><option value='Nonprofit'>Nonprofit</option><option value='Other'>Other</option></select></label>
 		</div>
-		<label className='message-field'><span>What are you trying to make possible?</span><textarea name='message' value={form.message} onChange={updateField} rows={7} minLength={10} maxLength={5000} required /></label>
+		<label className='message-field'><span>{messageLabel}</span><textarea name='message' value={form.message} onChange={updateField} rows={7} minLength={10} maxLength={5000 - messagePrefix.length} placeholder={messagePlaceholder} required /></label>
 		<label className='honeypot' aria-hidden='true'>Website<input name='website' value={form.website} onChange={updateField} tabIndex={-1} autoComplete='off' /></label>
 		<div className='form-submit-row'><p>Please do not include classified, controlled, or otherwise sensitive information.</p><button className='button button-primary' type='submit' disabled={status === 'submitting'}>{status === 'submitting' ? 'Sending…' : 'Send message'} <span aria-hidden='true'>↗</span></button></div>
 		<div className='form-status' aria-live='polite'>
-			{status === 'success' && <p className='success-message'>Message received. We’ll be in touch soon.</p>}
+			{status === 'success' && <p className='success-message'>{successText}</p>}
 			{status === 'error' && <p className='error-message'>{error}</p>}
 		</div>
 	</form>;

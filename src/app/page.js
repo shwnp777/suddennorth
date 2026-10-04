@@ -55,6 +55,26 @@ export default function Home() {
 				</div>
 			</section>
 
+			<section className='section path-section' aria-labelledby='paths-title'>
+				<div className='shell'>
+					<div className='section-heading'><div><p className='section-kicker'>Two ways in</p><h2 id='paths-title'>Team with us, or start free.</h2></div><p>Primes get a capability partner. Everyone else gets honest tools first.</p></div>
+					<div className='path-grid'>
+						<Link href='/teaming' className='path-card'>
+							<span className='path-code'>PATH / 01 · PRIMES &amp; PROGRAMS</span>
+							<h3>Teaming with us</h3>
+							<p>Capability statement, NAICS codes, and how we fit into your pursuit as a veteran-owned subcontractor.</p>
+							<span className='text-link light-link'>Capability statement <span>↗</span></span>
+						</Link>
+						<Link href='/resources' className='path-card path-card-alt'>
+							<span className='path-code'>PATH / 02 · BEFORE YOU SPEND</span>
+							<h3>You might not need us</h3>
+							<p>A private CMMC readiness check, an AI cost–benefit calculator, and field notes on AI integration risk.</p>
+							<span className='text-link light-link'>Free tools <span>↗</span></span>
+						</Link>
+					</div>
+				</div>
+			</section>
+
 			<section className='section cta-section'>
 				<div className='shell cta-panel'><div><p className='section-kicker'>Your next move</p><h2>Bring us the hard problem.</h2><p>We’ll help you find the clear path forward.</p></div><Link href='/contact' className='button button-primary'>Start a conversation <span>↗</span></Link></div>
 			</section>

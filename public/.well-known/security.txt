@@ -1,0 +1,5 @@
+Contact: mailto:contact@suddennorth.com
+Expires: 2027-10-04T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://suddennorth.com/.well-known/security.txt
+Policy: https://suddennorth.com/security
