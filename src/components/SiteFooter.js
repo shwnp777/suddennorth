@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import TerminalLogo from '@/components/TerminalLogo';
-import { CONTACT_EMAIL, contactNav, primaryNav } from '@/lib/navigation';
+import { CONTACT_EMAIL, contactNav, primaryNav, secondaryNav } from '@/lib/navigation';
 
-const links = [{ name: 'Home', href: '/' }, ...primaryNav, contactNav];
+const links = [{ name: 'Home', href: '/' }, ...primaryNav, contactNav, ...secondaryNav];
 
 export default function SiteFooter() {
 	return (
